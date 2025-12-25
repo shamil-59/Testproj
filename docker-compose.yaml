@@ -7,14 +7,6 @@ services:
     container_name: api-gateway
     ports:
       - "5000:5000"
-    # environment:
-    #   - PORT=5000
-    #   - USERS_SERVICE_URL=http://users:8001
-    #   - PRODUCTS_SERVICE_URL=http://products:8002
-    #   - ORDERS_SERVICE_URL=http://orders:8003
-    #   - REVIEWS_SERVICE_URL=http://reviews:8004
-    #   - PICTURES_SERVICE_URL=http://pictures:8005
-    #   - VIDEOS_SERVICE_URL=http://videos:5004
     depends_on:
       - users
       - books
