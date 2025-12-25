@@ -20,8 +20,8 @@ services:
   users:
     build: ./users
     container_name: users-service
-    ports:
-      - "5001:5001"
+    # ports:
+    #   - "5001:5001"
     environment:
       - PORT=5001
     volumes:
@@ -34,8 +34,8 @@ services:
   books:
     build: ./books
     container_name: books-service
-    ports:
-      - "5002:5002"
+    # ports:
+    #   - "5002:5002"
     environment:
       - PORT=5002
     volumes:
@@ -49,8 +49,8 @@ services:
   pictures:
     build: ./pictures
     container_name: pictures-service
-    ports:
-      - "5003:5003"
+    # ports:
+    #   - "5003:5003"
     environment:
       - PORT=5003
     volumes: 
@@ -64,8 +64,8 @@ services:
   videos:
     build: ./videos
     container_name: videos-service
-    ports:
-      - "5004:5004"
+    # ports:
+    #   - "5004:5004"
     environment:
       - PORT=5004
     volumes:
